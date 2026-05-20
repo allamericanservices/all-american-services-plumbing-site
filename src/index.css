@@ -1,7 +1,117 @@
-
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #0f172a;
+  background: #07142f;
   color: white;
+}
+
+.site {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #07142f, #0b2a66);
+}
+
+.hero {
+  text-align: center;
+  padding: 70px 20px 55px;
+}
+
+.badge {
+  display: inline-block;
+  background: rgba(255,255,255,.12);
+  padding: 8px 14px;
+  border-radius: 999px;
+  margin-bottom: 18px;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 46px;
+  margin: 0 0 14px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 28px;
+}
+
+.buttons {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+a {
+  color: white;
+}
+
+.call,
+.contact a {
+  background: #dc2626;
+  padding: 14px 24px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.secondary {
+  background: white;
+  color: #07142f;
+  padding: 14px 24px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.services {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 35px 20px 60px;
+  text-align: center;
+}
+
+.services h2,
+.contact h2 {
+  font-size: 34px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-top: 28px;
+}
+
+.card {
+  background: rgba(255,255,255,.12);
+  border: 1px solid rgba(255,255,255,.18);
+  border-radius: 18px;
+  padding: 28px;
+  box-shadow: 0 12px 30px rgba(0,0,0,.25);
+}
+
+.card h3 {
+  font-size: 22px;
+}
+
+.card p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.contact {
+  text-align: center;
+  padding: 55px 20px 75px;
+  background: rgba(0,0,0,.22);
+}
+
+@media (max-width: 800px) {
+  h1 {
+    font-size: 34px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
 }

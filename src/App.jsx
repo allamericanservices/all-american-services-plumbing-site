@@ -1,48 +1,46 @@
-
 export default function App() {
   return (
-    <main style={{ padding: "40px 20px", textAlign: "center" }}>
-      <h1 style={{ fontSize: "36px", marginBottom: "10px" }}>
-        All American Services & Plumbing
-      </h1>
+    <main className="site">
+      <section className="hero">
+        <div className="badge">Licensed • Insured • Reliable</div>
 
-      <p style={{ fontSize: "18px", marginBottom: "20px" }}>
-        Reliable plumbing services you can count on.
-      </p>
+        <h1>All American Services & Plumbing</h1>
 
-      <a
-        href="tel:5127349313"
-        style={{
-          background: "#dc2626",
-          color: "white",
-          padding: "12px 22px",
-          borderRadius: "8px",
-          textDecoration: "none",
-          fontWeight: "bold",
-          display: "inline-block",
-          marginBottom: "35px"
-        }}
-      >
-        Call 512-734-9313
-      </a>
+        <p>
+          Fast, dependable plumbing service for homes and businesses.
+        </p>
 
-      <h2 style={{ fontSize: "28px", marginBottom: "20px" }}>Services</h2>
-
-      <section style={{ maxWidth: "900px", margin: "0 auto", display: "grid", gap: "18px" }}>
-        <div style={{ background: "#1e293b", padding: "20px", borderRadius: "12px" }}>
-          <h3>Emergency Plumbing</h3>
-          <p>Fast plumbing help when you need it.</p>
+        <div className="buttons">
+          <a href="tel:5127349313" className="call">Call 512-734-9313</a>
+          <a href="#services" className="secondary">View Services</a>
         </div>
+      </section>
 
-        <div style={{ background: "#1e293b", padding: "20px", borderRadius: "12px" }}>
-          <h3>Drain Cleaning</h3>
-          <p>Clog removal and drain service.</p>
-        </div>
+      <section id="services" className="services">
+        <h2>Our Plumbing Services</h2>
 
-        <div style={{ background: "#1e293b", padding: "20px", borderRadius: "12px" }}>
-          <h3>Water Heaters</h3>
-          <p>Repair and installation services.</p>
+        <div className="cards">
+          <div className="card">
+            <h3>Emergency Plumbing</h3>
+            <p>Fast help for leaks, burst pipes, and urgent plumbing issues.</p>
+          </div>
+
+          <div className="card">
+            <h3>Drain Cleaning</h3>
+            <p>Clog removal, slow drains, and professional drain service.</p>
+          </div>
+
+          <div className="card">
+            <h3>Water Heaters</h3>
+            <p>Water heater repair, replacement, and installation.</p>
+          </div>
         </div>
+      </section>
+
+      <section className="contact">
+        <h2>Need a plumber today?</h2>
+        <p>Call now for service.</p>
+        <a href="tel:5127349313">512-734-9313</a>
       </section>
     </main>
   );
