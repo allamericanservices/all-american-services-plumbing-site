@@ -1,44 +1,49 @@
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-slate-950 text-white">
-      <section className="px-6 py-12 text-center">
-        <h1 className="text-4xl font-bold mb-4">
-          All American Services & Plumbing
-        </h1>
+    <main style={{ padding: "40px 20px", textAlign: "center" }}>
+      <h1 style={{ fontSize: "36px", marginBottom: "10px" }}>
+        All American Services & Plumbing
+      </h1>
 
-        <p className="text-lg text-slate-300 mb-6">
-          Reliable plumbing services you can count on.
-        </p>
+      <p style={{ fontSize: "18px", marginBottom: "20px" }}>
+        Reliable plumbing services you can count on.
+      </p>
 
-        <a
-          href="tel:5127349313"
-          className="inline-block bg-red-600 px-6 py-3 rounded-lg font-bold"
-        >
-          Call 512-734-9313
-        </a>
-      </section>
+      <a
+        href="tel:5127349313"
+        style={{
+          background: "#dc2626",
+          color: "white",
+          padding: "12px 22px",
+          borderRadius: "8px",
+          textDecoration: "none",
+          fontWeight: "bold",
+          display: "inline-block",
+          marginBottom: "35px"
+        }}
+      >
+        Call 512-734-9313
+      </a>
 
-      <section className="px-6 py-10 max-w-5xl mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-8">Services</h2>
+      <h2 style={{ fontSize: "28px", marginBottom: "20px" }}>Services</h2>
 
-        <div className="grid md:grid-cols-3 gap-5">
-          <div className="bg-slate-900 p-5 rounded-xl">
-            <h3 className="text-xl font-bold mb-2">Emergency Plumbing</h3>
-            <p>Fast plumbing help when you need it.</p>
-          </div>
+      <section style={{ maxWidth: "900px", margin: "0 auto", display: "grid", gap: "18px" }}>
+        <div style={{ background: "#1e293b", padding: "20px", borderRadius: "12px" }}>
+          <h3>Emergency Plumbing</h3>
+          <p>Fast plumbing help when you need it.</p>
+        </div>
 
-          <div className="bg-slate-900 p-5 rounded-xl">
-            <h3 className="text-xl font-bold mb-2">Drain Cleaning</h3>
-            <p>Clog removal and drain service.</p>
-          </div>
+        <div style={{ background: "#1e293b", padding: "20px", borderRadius: "12px" }}>
+          <h3>Drain Cleaning</h3>
+          <p>Clog removal and drain service.</p>
+        </div>
 
-          <div className="bg-slate-900 p-5 rounded-xl">
-            <h3 className="text-xl font-bold mb-2">Water Heaters</h3>
-            <p>Repair and installation services.</p>
-          </div>
+        <div style={{ background: "#1e293b", padding: "20px", borderRadius: "12px" }}>
+          <h3>Water Heaters</h3>
+          <p>Repair and installation services.</p>
         </div>
       </section>
-    </div>
+    </main>
   );
 }
