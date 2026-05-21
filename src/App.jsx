@@ -1,47 +1,123 @@
 export default function App() {
   return (
-    <main className="site">
-      <section className="hero">
-        <div className="badge">Licensed • Insured • Reliable</div>
+    <main style={{
+      minHeight: "100vh",
+      background: "linear-gradient(to bottom right, #0f172a, #1e3a8a)",
+      color: "white",
+      fontFamily: "Arial",
+      padding: "40px"
+    }}>
+      <div style={{
+        maxWidth: "1100px",
+        margin: "0 auto",
+        textAlign: "center"
+      }}>
+        <div style={{
+          display: "inline-block",
+          background: "#2563eb",
+          padding: "8px 18px",
+          borderRadius: "999px",
+          fontSize: "14px",
+          marginBottom: "20px"
+        }}>
+          Licensed • Insured • Reliable
+        </div>
 
-        <h1>All American Services & Plumbing</h1>
+        <h1 style={{
+          fontSize: "58px",
+          marginBottom: "20px",
+          fontWeight: "bold"
+        }}>
+          All American Services & Plumbing
+        </h1>
 
-        <p>
-          Fast, dependable plumbing service for homes and businesses.
+        <p style={{
+          fontSize: "22px",
+          color: "#cbd5e1",
+          maxWidth: "700px",
+          margin: "0 auto 40px"
+        }}>
+          Professional plumbing services for homes and businesses.
+          Fast response times. Honest pricing. Quality workmanship.
         </p>
 
-        <div className="buttons">
-          <a href="tel:5127349313" className="call">Call 512-734-9313</a>
-          <a href="#services" className="secondary">View Services</a>
+        <div style={{
+          display: "flex",
+          justifyContent: "center",
+          gap: "20px",
+          marginBottom: "60px",
+          flexWrap: "wrap"
+        }}>
+          <a
+            href="tel:5127349313"
+            style={{
+              background: "#f97316",
+              padding: "16px 28px",
+              borderRadius: "12px",
+              color: "white",
+              textDecoration: "none",
+              fontWeight: "bold",
+              fontSize: "18px"
+            }}
+          >
+            Call Now
+          </a>
+
+          <a
+            href="#services"
+            style={{
+              border: "2px solid white",
+              padding: "16px 28px",
+              borderRadius: "12px",
+              color: "white",
+              textDecoration: "none",
+              fontWeight: "bold",
+              fontSize: "18px"
+            }}
+          >
+            View Services
+          </a>
         </div>
-      </section>
 
-      <section id="services" className="services">
-        <h2>Our Plumbing Services</h2>
-
-        <div className="cards">
-          <div className="card">
-            <h3>Emergency Plumbing</h3>
-            <p>Fast help for leaks, burst pipes, and urgent plumbing issues.</p>
+        <div id="services" style={{
+          display: "grid",
+          gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
+          gap: "24px"
+        }}>
+          <div style={{
+            background: "rgba(255,255,255,0.1)",
+            padding: "30px",
+            borderRadius: "20px"
+          }}>
+            <h2>Emergency Plumbing</h2>
+            <p>
+              Fast help for leaks, burst pipes, and urgent plumbing issues.
+            </p>
           </div>
 
-          <div className="card">
-            <h3>Drain Cleaning</h3>
-            <p>Clog removal, slow drains, and professional drain service.</p>
+          <div style={{
+            background: "rgba(255,255,255,0.1)",
+            padding: "30px",
+            borderRadius: "20px"
+          }}>
+            <h2>Drain Cleaning</h2>
+            <p>
+              Professional drain cleaning and clog removal services.
+            </p>
           </div>
 
-          <div className="card">
-            <h3>Water Heaters</h3>
-            <p>Water heater repair, replacement, and installation.</p>
+          <div style={{
+            background: "rgba(255,255,255,0.1)",
+            padding: "30px",
+            borderRadius: "20px"
+          }}>
+            <h2>Water Heaters</h2>
+            <p>
+              Water heater repair, replacement, and installation.
+            </p>
           </div>
         </div>
-      </section>
-
-      <section className="contact">
-        <h2>Need a plumber today?</h2>
-        <p>Call now for service.</p>
-        <a href="tel:5127349313">512-734-9313</a>
-      </section>
+      </div>
     </main>
   );
 }
