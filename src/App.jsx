@@ -1,123 +1,151 @@
 export default function App() {
   return (
-    <main style={{
-      minHeight: "100vh",
-      background: "linear-gradient(to bottom right, #0f172a, #1e3a8a)",
-      color: "white",
-      fontFamily: "Arial",
-      padding: "40px"
-    }}>
-      <div style={{
-        maxWidth: "1100px",
-        margin: "0 auto",
-        textAlign: "center"
-      }}>
-        <div style={{
+    <div
+      style={{
+        minHeight: "100vh",
+        background:
+          "linear-gradient(180deg, #021b79 0%, #0575e6 100%)",
+        color: "white",
+        fontFamily: "Arial, sans-serif",
+        padding: "40px 20px",
+        textAlign: "center",
+      }}
+    >
+      <div
+        style={{
           display: "inline-block",
-          background: "#2563eb",
-          padding: "8px 18px",
+          background: "#0ea5e9",
+          padding: "10px 24px",
           borderRadius: "999px",
-          fontSize: "14px",
-          marginBottom: "20px"
-        }}>
-          Licensed • Insured • Reliable
-        </div>
+          fontWeight: "bold",
+          marginBottom: "30px",
+        }}
+      >
+        Licensed • Insured • Reliable
+      </div>
 
-        <h1 style={{
-          fontSize: "58px",
+      <h1
+        style={{
+          fontSize: "72px",
+          fontWeight: "900",
           marginBottom: "20px",
-          fontWeight: "bold"
-        }}>
-          All American Services & Plumbing
-        </h1>
+          lineHeight: "1",
+        }}
+      >
+        All American Services & Plumbing
+      </h1>
 
-        <p style={{
-          fontSize: "22px",
-          color: "#cbd5e1",
-          maxWidth: "700px",
-          margin: "0 auto 40px"
-        }}>
-          Professional plumbing services for homes and businesses.
-          Fast response times. Honest pricing. Quality workmanship.
-        </p>
+      <p
+        style={{
+          fontSize: "28px",
+          maxWidth: "1000px",
+          margin: "0 auto",
+          lineHeight: "1.5",
+          marginBottom: "40px",
+        }}
+      >
+        Professional plumbing services for homes and businesses.
+        Fast response times. Honest pricing. Quality workmanship.
+      </p>
 
-        <div style={{
+      <div
+        style={{
           display: "flex",
           justifyContent: "center",
           gap: "20px",
           marginBottom: "60px",
-          flexWrap: "wrap"
-        }}>
-          <a
-            href="tel:5127349313"
-            style={{
-              background: "#f97316",
-              padding: "16px 28px",
-              borderRadius: "12px",
-              color: "white",
-              textDecoration: "none",
-              fontWeight: "bold",
-              fontSize: "18px"
-            }}
-          >
-            Call Now
-          </a>
+          flexWrap: "wrap",
+        }}
+      >
+        <a
+          href="tel:5127349313"
+          style={{
+            background: "#f97316",
+            color: "white",
+            padding: "18px 40px",
+            borderRadius: "14px",
+            textDecoration: "none",
+            fontWeight: "bold",
+            fontSize: "24px",
+          }}
+        >
+          Call Now
+        </a>
 
-          <a
-            href="#services"
-            style={{
-              border: "2px solid white",
-              padding: "16px 28px",
-              borderRadius: "12px",
-              color: "white",
-              textDecoration: "none",
-              fontWeight: "bold",
-              fontSize: "18px"
-            }}
-          >
-            View Services
-          </a>
+        <a
+          href="#services"
+          style={{
+            border: "3px solid white",
+            color: "white",
+            padding: "18px 40px",
+            borderRadius: "14px",
+            textDecoration: "none",
+            fontWeight: "bold",
+            fontSize: "24px",
+          }}
+        >
+          View Services
+        </a>
+      </div>
+
+      <div
+        id="services"
+        style={{
+          display: "grid",
+          gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+          gap: "30px",
+          maxWidth: "1200px",
+          margin: "0 auto",
+        }}
+      >
+        <div
+          style={{
+            background: "rgba(255,255,255,0.15)",
+            padding: "40px 20px",
+            borderRadius: "24px",
+            backdropFilter: "blur(8px)",
+          }}
+        >
+          <h2 style={{ fontSize: "36px", marginBottom: "15px" }}>
+            Emergency Plumbing
+          </h2>
+          <p style={{ fontSize: "22px" }}>
+            Fast help for leaks, burst pipes, and urgent plumbing issues.
+          </p>
         </div>
 
-        <div id="services" style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
-          gap: "24px"
-        }}>
-          <div style={{
-            background: "rgba(255,255,255,0.1)",
-            padding: "30px",
-            borderRadius: "20px"
-          }}>
-            <h2>Emergency Plumbing</h2>
-            <p>
-              Fast help for leaks, burst pipes, and urgent plumbing issues.
-            </p>
-          </div>
+        <div
+          style={{
+            background: "rgba(255,255,255,0.15)",
+            padding: "40px 20px",
+            borderRadius: "24px",
+            backdropFilter: "blur(8px)",
+          }}
+        >
+          <h2 style={{ fontSize: "36px", marginBottom: "15px" }}>
+            Drain Cleaning
+          </h2>
+          <p style={{ fontSize: "22px" }}>
+            Professional drain cleaning and clog removal services.
+          </p>
+        </div>
 
-          <div style={{
-            background: "rgba(255,255,255,0.1)",
-            padding: "30px",
-            borderRadius: "20px"
-          }}>
-            <h2>Drain Cleaning</h2>
-            <p>
-              Professional drain cleaning and clog removal services.
-            </p>
-          </div>
-
-          <div style={{
-            background: "rgba(255,255,255,0.1)",
-            padding: "30px",
-            borderRadius: "20px"
-          }}>
-            <h2>Water Heaters</h2>
-            <p>
-              Water heater repair, replacement, and installation.
-            </p>
-          </div>
+        <div
+          style={{
+            background: "rgba(255,255,255,0.15)",
+            padding: "40px 20px",
+            borderRadius: "24px",
+            backdropFilter: "blur(8px)",
+          }}
+        >
+          <h2 style={{ fontSize: "36px", marginBottom: "15px" }}>
+            Water Heaters
+          </h2>
+          <p style={{ fontSize: "22px" }}>
+            Water heater repair, replacement, and installation.
+          </p>
         </div>
       </div>
-    </main>
+    </div>
   );
 }
